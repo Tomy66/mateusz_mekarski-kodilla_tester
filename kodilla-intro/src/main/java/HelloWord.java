@@ -3,6 +3,6 @@ public class HelloWord {
     System.out.println("Hello Word!");
     System.out.println("Mateusz");
     System.out.println(23);
-    System.out.println("M");
-}
+    System.out.println('M');
+    }
 }
