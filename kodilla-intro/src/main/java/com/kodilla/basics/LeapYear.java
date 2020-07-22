@@ -1,3 +1,5 @@
+package com.kodilla.basics;
+
 public class LeapYear {
     private static boolean leap (int Year) {
         return ((Year % 4 == 0) && (Year % 100 != 0)) || (Year % 400 == 0);

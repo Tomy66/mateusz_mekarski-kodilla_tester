@@ -1,3 +1,5 @@
+package com.kodilla.basics;
+
 import javax.swing.*;
 
 public class Notebook {

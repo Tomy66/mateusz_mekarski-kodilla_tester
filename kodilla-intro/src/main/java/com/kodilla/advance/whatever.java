@@ -1,3 +1,5 @@
+package com.kodilla.advance;
+
 public class whatever {
     private boolean whatever(int rok)
     {

@@ -1,3 +1,5 @@
+package com.kodilla.advance;
+
 public class Calculator {
 
     int add(int a, int b) {
