@@ -1,3 +1,5 @@
+package com.kodilla.advance;
+
 public class User {
     String name;
     int age;

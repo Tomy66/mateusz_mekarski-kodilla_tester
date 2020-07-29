@@ -1,3 +1,5 @@
+package com.kodilla.advance;
+
 import java.util.Scanner;
 
 public class Switch {

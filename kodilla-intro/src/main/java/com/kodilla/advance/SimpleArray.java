@@ -1,3 +1,5 @@
+package com.kodilla.advance;
+
 public class SimpleArray {
     public static void main(String[] args) {
         String[] friends = new String[5];

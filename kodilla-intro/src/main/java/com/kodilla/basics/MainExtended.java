@@ -1,3 +1,5 @@
+package com.kodilla.basics;
+
 public class MainExtended {
     public static void main(String[] args) {
         String biggestCity= "Warsaw";

@@ -1,10 +1,12 @@
+package com.kodilla.advance;
+
 public class Book {
 
     private String author;
     private String tittle;
 
-    public  Book (String author,String tittle) {
-        this.tittle=tittle;
+    public  Book (String author,String title) {
+        this.tittle=title;
         this.author=author;
     }
 
@@ -14,4 +16,7 @@ public class Book {
 
     }
 
+    public static Book of(String author, String title) {
+        return new Book(author, title);
+    }
 }
