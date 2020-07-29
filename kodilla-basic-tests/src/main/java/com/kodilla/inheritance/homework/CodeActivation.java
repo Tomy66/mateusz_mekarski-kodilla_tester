@@ -5,15 +5,15 @@ public class CodeActivation {
         OperatingSystem windows = new Windows();
         OperatingSystem linux = new Linux();
 
-        windows.TurnOnSystem();
-        windows.DisplayPriceOfSystem();
-        windows.DisplayYearOfProduction();
-        windows.TurnOffSystem();
+        windows.turnOnSystem();
+        windows.displayPriceOfSystem();
+        windows.displayYearOfProduction();
+        windows.turnOffSystem();
 
-        linux.TurnOnSystem();
-        linux.DisplayPriceOfSystem();
-        linux.DisplayYearOfProduction();
-        linux.TurnOffSystem();
+        linux.turnOnSystem();
+        linux.displayPriceOfSystem();
+        linux.displayYearOfProduction();
+        linux.turnOffSystem();
 
     }
 }

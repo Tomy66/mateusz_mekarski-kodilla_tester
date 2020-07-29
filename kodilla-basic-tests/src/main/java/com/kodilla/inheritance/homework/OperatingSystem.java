@@ -8,10 +8,10 @@ public class OperatingSystem {
         this.price=price;
         this.year=year;
     }
-    public void TurnOnSystem(){
+    public void turnOnSystem(){
         System.out.println("System is turned on");
     }
-    public void TurnOffSystem(){
+    public void turnOffSystem(){
         System.out.println("System is turned off");
     }
     public int getPrice(){
@@ -20,10 +20,10 @@ public class OperatingSystem {
     public int getYear(){
         return year;
     }
-    public void DisplayYearOfProduction(){
+    public void displayYearOfProduction(){
         System.out.println("System was produced in " + year);
     }
-    public void DisplayPriceOfSystem(){
+    public void displayPriceOfSystem(){
         System.out.println("The price of the system is " + price);
     }
 }
