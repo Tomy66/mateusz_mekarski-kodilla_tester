@@ -9,7 +9,6 @@ public class Grades {
         this.size = 0;
     }
 
-
     public void add(int value) {
         if (this.size == 10) {
             return;
