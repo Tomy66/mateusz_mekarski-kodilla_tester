@@ -4,4 +4,5 @@ public class Application1 {
         Application person = new Application("Adam",42,180);
         person.checkPerson();
     }
+
 }
