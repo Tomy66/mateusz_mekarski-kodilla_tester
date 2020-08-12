@@ -18,4 +18,11 @@ public class Porsche implements Car {
         speed = speed/2;
 
     }
+
+    @Override
+    public String toString() {
+        return "Porsche{" +
+                "speed=" + speed +
+                '}';
+    }
 }

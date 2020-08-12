@@ -14,6 +14,7 @@ public class Tesla implements Car {
     public void increaseSpeed() {
         speed = 2* speed;
     }
+
     public void decreaseSpeed() {
         speed = speed/3;
     }

@@ -16,6 +16,7 @@ public class Bentley implements Car{
 
         speed = 2 * speed;
     }
+
     public void decreaseSpeed() {
         speed = speed/2;
 
