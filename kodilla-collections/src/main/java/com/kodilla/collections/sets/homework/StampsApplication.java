@@ -6,12 +6,14 @@ import java.util.Set;
 public class StampsApplication {
     public static void main(String[] args) {
         Set<Stamp> stamps = new HashSet<>();
-        stamps.add(new Stamp("Tree","20x30","Stamped"));
-        stamps.add(new Stamp("Castle","10x30","Not Stamped"));
-        stamps.add(new Stamp("Bridge","25x30","Not Stamped"));
-        stamps.add(new Stamp("Tree","20x30","Stamped"));
+        stamps.add(new Stamp("Tree",20,true));
+        stamps.add(new Stamp("Castle",10,false));
+        stamps.add(new Stamp("Bridge",25,false));
+        stamps.add(new Stamp("Tree",20,true));
         System.out.println(stamps.size());
-        for (Stamp stamp : stamps);
-        System.out.println(stamps);
+        for (Stamp stamp : stamps){
+            System.out.println(stamp);
+        }
+
     }
 }

@@ -4,10 +4,10 @@ import java.util.Objects;
 
 public class Stamp {
     private String stampName;
-    private String stampDimensions;
-    private String stamped;
+    private double stampDimensions;
+    private boolean stamped;
 
-    public Stamp(String stampName, String stampDimensions, String  stamped){
+    public Stamp(String stampName, double stampDimensions, boolean  stamped){
         this.stampName = stampName;
         this.stampDimensions = stampDimensions;
         this.stamped=stamped;
@@ -16,10 +16,10 @@ public class Stamp {
     public String getStampName() {
         return stampName;
     }
-    public String getStampDimensions(){
+    public double getStampDimensions(){
         return  stampDimensions;
     }
-    public String getStamped(){
+    public boolean getStamped(){
         return stamped;
     }
 
