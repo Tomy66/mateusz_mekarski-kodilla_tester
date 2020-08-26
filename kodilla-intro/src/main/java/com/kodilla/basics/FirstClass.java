@@ -2,7 +2,7 @@ package com.kodilla.basics;
 
 public class FirstClass {
     public static void main(String[] args) {
-        Notebook notebook = new Notebook(600, 1000, 2020);
+        Notebook notebook = new Notebook(600, 900, 2020);
         System.out.println(notebook.weight + " " + notebook.price + " " + notebook.year);
         notebook.checkPrice();
         notebook.checkWeight();
