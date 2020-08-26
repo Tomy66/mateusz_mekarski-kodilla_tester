@@ -22,6 +22,7 @@ public class Grades {
 
     }
 
+
     public double getAverage() {
         double marks = 0;
         for (int grade : grades) {

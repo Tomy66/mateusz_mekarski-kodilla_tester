@@ -1,6 +1,5 @@
 package com.kodilla.basics;
 
-import javax.swing.*;
 
 public class Notebook {
     int weight;
@@ -16,27 +15,29 @@ public class Notebook {
     public void checkPrice() {
         if (this.price < 600) {
             System.out.println("This notebook is very cheap.");
-        } else if(this.price > 600 && this.price < 1000){
+        } else if (this.price>600 && this.price < 1000) {
             System.out.println("This price is good.");
         } else {
             System.out.println("This notebook is expensive");
         }
     }
-    public void checkWeight(){
+
+    public void checkWeight() {
         if (this.weight < 1000) {
             System.out.println("This notebook is light.");
-        } else if( this.weight < 1800){
+        } else if (this.weight < 1800) {
             System.out.println("This notebook is not too heavy.");
-        } else  {
+        } else {
             System.out.println("This notebook is very heavy");
         }
     }
-    public void checkYear(){
+
+    public void checkYear() {
         if (this.price < 800 && this.year < 2010) {
             System.out.println("This notebook is cheap but too old");
-        } else if(this.price > 800 && this.year < 2016){
+        } else if (this.price > 800 && this.year < 2016) {
             System.out.println("This notebook is fine, but you may find better one");
-        } else if(this.price <1100 && this.year > 2018){
+        } else if (this.price < 1100 && this.year > 2018) {
             System.out.println("This notebook is very good, you should buy it");
         }
     }
