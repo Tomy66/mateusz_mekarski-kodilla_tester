@@ -26,22 +26,15 @@ public class CarUtils {
     public static void main(String[] args) {
         int sizeOfArray = random.nextInt(15)+1;
         Car[] cars = new Car[sizeOfArray];
-        for (int i =0; i< sizeOfArray; i++)
+        for (int i =0; i< sizeOfArray; i++) {
             cars[i] = createCar();
-
-        Car car = createCar();
-        System.out.println(car);
-        System.out.println(drawCar());
-        String[] carBrands = new String[5];
-        carBrands[0]="Jaguar";
-        carBrands[1]="Maserati";
-        carBrands[2]="Audi";
-        carBrands[3]="Seat";
-        carBrands[4]="Subaru";
-        for (int i = 0 ; i< carBrands.length ; i++){
-            String information = carBrands[i];
-            System.out.println( information);
         }
+
+        for (Car car: cars){
+            describeCar(car);
+        }
+
+
 
     }
 
@@ -55,7 +48,7 @@ public class CarUtils {
     }
 
     public static void describeCar(Car car){
-        System.out.println("Car kind: " + getCarName(car));
+        System.out.println("Car kind: " + getCarName(car)+ "Car speed: " +car.getSpeed());
 
     }
 
