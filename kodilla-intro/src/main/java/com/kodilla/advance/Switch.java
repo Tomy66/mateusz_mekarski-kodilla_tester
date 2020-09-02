@@ -12,7 +12,7 @@ public class Switch {
     }
 
     public static void main(String[] args) {
-        colors myColors = colors.B;
+        colors myColors = colors.R;
         switch (myColors) {
             case Y:
                 System.out.println("Yellow");
