@@ -13,10 +13,12 @@ public class Application {
     }
 
     public void checkPerson() {
-        if (this.age > 30 && this.height > 160) {
-            System.out.println("com.kodilla.advance.User is older than 30 and higher then 160cm");
-        } else {
-            System.out.println("com.kodilla.advance.User is younger than 30 or lower than 160cm");
+        if (name!= null){
+            if (this.age > 30 && this.height > 160) {
+                System.out.println("User is older than 30 and higher then 160cm");
+            } else {
+                System.out.println("User is younger than 30 or lower than 160cm");
+            }
         }
     }
 }
