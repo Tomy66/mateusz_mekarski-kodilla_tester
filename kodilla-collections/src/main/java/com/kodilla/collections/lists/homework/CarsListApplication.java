@@ -1,6 +1,7 @@
 package com.kodilla.collections.lists.homework;
 
 
+import com.kodilla.collections.arrays.homework.CarUtils;
 import com.kodilla.collections.interfaces.homework.Porsche;
 
 import java.util.ArrayList;
@@ -22,6 +23,8 @@ public class CarsListApplication {
         System.out.println(cars.size());
 
         for (Porsche porsche : cars){
+            CarUtils.describeCar(porsche);
+
             if (porsche.getSpeed()>70)
                 System.out.println(porsche + " Car speed is : " + porsche.getSpeed());
 
