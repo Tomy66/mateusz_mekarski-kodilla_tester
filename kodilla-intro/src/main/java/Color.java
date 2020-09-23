@@ -1,6 +1,4 @@
-package com.kodilla.advance;
-
-public enum colors {
+public enum Color {
     Y, /*Yellow*/
     R, /*Red*/
     B, /*Blue*/
