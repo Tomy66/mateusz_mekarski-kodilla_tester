@@ -4,6 +4,7 @@ public class RandomNumbers {
     int max;
     int min= 30;
 
+
     public static void main(String[] args) {
        RandomNumbers  randomNumbers = new RandomNumbers();
     }
