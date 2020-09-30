@@ -1,0 +1,30 @@
+package com.kodilla.collections.adv.complex;
+
+import java.util.ArrayList;
+
+import java.util.List;
+
+public class Grades {
+    private List<Double> grades = new ArrayList<>();
+
+    public Grades(double... grades) {
+        for (double grade : grades) {
+            this.grades.add(grade);
+        }
+        Grades johnGrades = new Grades(5.0, 4.0, 3.5, 5.0);
+
+    }
+    public double getAverage() {
+        double sum = 0.0;
+        for (double grade : grades)
+            sum += grade;
+            return sum / grades.size();
+    }
+
+    @Override
+    public String toString() {
+        return "Grades{" +
+                "grades=" + grades +
+                '}';
+    }
+}
