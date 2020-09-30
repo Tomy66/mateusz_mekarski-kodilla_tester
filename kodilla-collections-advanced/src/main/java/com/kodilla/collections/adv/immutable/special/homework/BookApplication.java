@@ -1,18 +1,18 @@
 package com.kodilla.collections.adv.immutable.special.homework;
 
-import java.util.HashSet;
-import java.util.Set;
-//metoda tworząca nowy obiekt jest w klasie Book, dlatego nie ma klasy BookManager
+
+
 public class BookApplication {
     public static void main(String[] args) {
-        Set <Book> newBook = new HashSet<>();
-        newBook.add(new Book("Robert C. Martin","Clean Code"));
-        newBook.add(new Book("Robert C. Martin","Clean Code"));
-        newBook.add(new Book("J.K. Rowling","Harry Potter"));
+        BookManager bookManager = new BookManager();
 
-        System.out.println(newBook.size());
-        for (Book book: newBook)
-            System.out.println(book);
+        Book book1 = bookManager.createBook("Clean Code","Robert C. Martin");
+        Book book2 = bookManager.createBook("Clean Code","Robert C. Martin");
+        Book book3 = bookManager.createBook("Clean Code","Robert C. Martin2");
 
+        System.out.println(book1 = book2);
+        System.out.println(book1 = book3);
+        System.out.println(book2 = book3);
     }
+
 }
