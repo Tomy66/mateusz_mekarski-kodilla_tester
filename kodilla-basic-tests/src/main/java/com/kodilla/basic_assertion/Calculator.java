@@ -8,7 +8,7 @@ public class Calculator {
         return a - b;
     }
     public int pow(int a){
-        return a^2; //nie wiem czy to poprawny zapis//
+        return a*a;
     }
 
 }
