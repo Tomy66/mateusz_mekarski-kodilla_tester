@@ -3,6 +3,8 @@ package com.kodilla.selenium.allegro;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class AllegroTestingApp {
@@ -14,13 +16,18 @@ public class AllegroTestingApp {
         TimeUnit.MILLISECONDS.sleep(100);
         driver.switchTo().activeElement().sendKeys(Keys.ENTER);
 
-        WebElement category = driver.findElement(By.xpath("/html/body/div[2]/div[5]/div/div/div[1]/div/div/div/div/div/div[2]/div/nav/div/div/div[2]/div/div/div[1]/a"));
+        WebElement category = driver.findElement(By.cssSelector("body > div.main-wrapper > div:nth-child(5) > div > div > div:nth-child(1) > div > div > div > div > div > div:nth-child(2) > div > nav > div > div > div.mg9e_16.mvrt_0.mh36_0.mj7a_0._9plbd._4b3d3_3La74._152v3 > div > div > div:nth-child(1)"));
         category.click();
-
 
         WebElement input = driver.findElement(By.cssSelector("input[type='search']"));
         input.sendKeys("Mavic mini");
         input.submit();
+
+        //WebDriverWait wait = new WebDriverWait(driver, 5);
+        //wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector("input[type='search']")));
+
+        List<WebElement> elements = driver.findElements(By.id("#Oferty promowane"));
+        elements.get(1).getText();
 
     }
 }
